@@ -1,4 +1,6 @@
 #!/bin/bash
+# This is used for prom/grafana scraping, more or less just fun way to run htop. 
+# You'll need to replace localhost:9091 with your prom server and ensure you have pushgateway configured.
 psResults=$(ps aux)
 while read -r z
 do
